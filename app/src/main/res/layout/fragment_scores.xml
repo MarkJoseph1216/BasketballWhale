@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scoresbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_alignParentTop="true"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:background="#2C2B53"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolBar"
+        android:elevation="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:id="@+id/txtHeader"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:text="Basketball Scores"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/robotocondensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/toolBar"
+        android:id="@+id/recyclerViewSportsScores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:visibility="gone"
+        android:id="@+id/loadingScores"
+        app:indicatorColor="@color/colorLightYellow"
+        app:indicatorName="BallBeatIndicator"
+        android:layout_centerInParent="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+</RelativeLayout>

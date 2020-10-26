@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Basketball Whale</string>
+
+    <string name="menu_home">Home</string>
+    <string name="events">Events</string>
+    <string name="players">Players</string>
+    <string name="leagues">Leagues</string>
+    <string name="scores">Scores</string>
+</resources>
