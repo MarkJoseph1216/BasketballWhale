@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.basketballwhale">
+    package="com.sports.basketballwhale">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,9 +13,9 @@
         android:roundIcon="@drawable/basketballicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Dashboard"></activity>
-        <activity android:name=".Activities.Banners.LiveActivity" />
-        <activity android:name=".Activities.SplashScreen">
+        <activity android:name="com.sports.basketballwhale.Activities.Dashboard"></activity>
+        <activity android:name="com.sports.basketballwhale.Activities.Banners.LiveActivity" />
+        <activity android:name="com.sports.basketballwhale.Activities.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
